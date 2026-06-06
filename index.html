@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador de Tareas de Servidores</title>
+</head>
+
+<body>
+
+    <h1>Administrador de Tareas de Mantenimiento de Servidores</h1>
+
+    <input
+        type="text"
+        id="titulo"
+        placeholder="Título de la tarea">
+
+    <br><br>
+
+    <textarea
+        id="descripcion"
+        placeholder="Descripción de la tarea"></textarea>
+
+    <br><br>
+
+    <select id="categoria">
+        <option value="Servidores">Servidores</option>
+        <option value="Base de Datos">Base de Datos</option>
+        <option value="Redes">Redes</option>
+        <option value="Backups">Backups</option>
+    </select>
+
+    <br><br>
+
+    <button id="btnAgregar">
+        Agregar tarea
+    </button>
+
+    <h3 id="ultimaTarea">
+        Última tarea editada: Ninguna
+    </h3>
+
+    <h2>Tareas Registradas</h2>
+
+    <ul id="listaTareas"></ul>
+
+    <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>
